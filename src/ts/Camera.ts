@@ -10,6 +10,11 @@ class Camera {
         this.setCanvasElementResolution();
         this.getCanvasContext();
 
+        window.onresize= () => {
+            this.getScreenResolution();
+            this.canvasElement.width = this.width;
+            this.canvasElement.height = this.height;
+        };
         this.mainLoop();
     }
 
