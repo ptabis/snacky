@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --output-public-path=dist/"
+    "dev": "webpack-dev-server --output-public-path=dist/",
+    "docs": "typedoc --theme minimal"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^6.2.1",
+    "typedoc": "^0.16.10",
     "typescript": "^3.8.2",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
