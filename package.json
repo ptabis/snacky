@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --output-public-path=dist/",
+    "dist": "webpack",
     "docs": "typedoc --theme minimal"
   },
   "keywords": [],
