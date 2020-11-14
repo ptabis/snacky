@@ -1,12 +1,16 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
     mode: "production",
 
     devtool: "source-map",
-    entry: "./src/index.ts",
+    entry: "./src/ts/index.ts",
     resolve: {
-        extensions: [".ts"]
+        extensions: [".ts", ".js"]
     },
-
+    plugins: [
+        new MiniCssExtractPlugin()
+    ],
     module: {
         rules: [
             {
@@ -22,6 +26,10 @@ module.exports = {
                 enforce: "pre",
                 test: /\.js$/,
                 loader: "source-map-loader"
+            },
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],  
             }
         ]
     }

@@ -5,15 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
+    "dev": "webpack-dev-server --output-public-path=dist/",
+    "dist": "webpack",
+    "docs": "typedoc --theme minimal"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^6.2.1",
+    "typedoc": "^0.16.10",
     "typescript": "^3.8.2",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }

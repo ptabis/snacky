@@ -9,6 +9,7 @@
 /examples/**/dist
 /coverage
 /dist/*
+/docs
 .DS_Store
 *.log
 .idea
