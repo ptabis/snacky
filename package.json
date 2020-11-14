@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
     "dev": "webpack-dev-server --output-public-path=dist/",
     "dist": "webpack",
     "docs": "typedoc --theme minimal"
