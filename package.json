@@ -3,24 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "dev": "webpack-dev-server --output-public-path=dist/",
-    "dist": "webpack",
-    "docs": "typedoc --theme minimal"
-  },
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
   "devDependencies": {
-    "css-loader": "^6.4.0",
-    "mini-css-extract-plugin": "^2.4.2",
-    "source-map-loader": "^3.0.0",
-    "ts-loader": "^9.2.6",
-    "typedoc": "^0.22.5",
-    "typescript": "^4.4.4",
-    "webpack": "^5.58.2",
-    "webpack-cli": "^4.9.0",
-    "webpack-dev-server": "^4.3.1"
+    "@snowpack/plugin-sass": "^1.4.0",
+    "prettier": "^2.4.1",
+    "snowpack": "^3.8.8",
+    "typedoc": "^0.22.6"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
