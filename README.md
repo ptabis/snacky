@@ -1,3 +1,3 @@
-__Compile with `npm run dist` command__
+__Compile with `npm run build` command__
 
-__Develop with `npm run dev` command__
+__Develop with `npm run start` command__
