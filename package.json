@@ -16,5 +16,8 @@
     "prettier": "^2.4.1",
     "snowpack": "^3.8.8",
     "typedoc": "^0.22.6"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
